@@ -1,18 +1,42 @@
 <?php
 
+//What is an Array
+
+
 // Create array
+//$fruit = array('banana','Ndizi','orage');
+$fruits = ['Banana','Apple','Orange'];
 
 // Print the whole array
+echo '<pre>';
+var_dump($fruits);
+print_r($fruits);
+echo '</pre>';
 
 // Get element by index
+echo $fruits[2];
 
 // Set element by index
+$fruits[1] = 'Mangos';
+echo '<pre>';
+var_dump($fruits);
+print_r($fruits);
+echo '</pre>';
 
 // Check if array has element at index 2
-
+if (isset($fruits[4])){
+    echo 'true';
+}
 // Append element
+$fruits[] = 'Nanasi';
+
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
 
 // Print the length of the array
+echo count($fruits);
+
 
 // Add element at the end of the array
 
